@@ -1,0 +1,10 @@
+# config/appdynamics.yml
+app_name: Docker_devil
+tier_name: ruby_rails
+node_name: process
+controller:
+  host: xxxxxx105-9-2.ap-southeast-2.compute.amazonaws.com
+  port: 80xx
+  account: customer1
+  access_key: xcxcx8xxx5737f-7626-41a2-81d6-2c72250f07d3
+  use_ssl: false
