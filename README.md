@@ -1,24 +1,36 @@
-# README
+# Appdynamics - ruby agent - docker
+A simple demo to instrument Ruby on  Rails Application using Appd ruby agent in docker container
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+### AppDynamics Ruby agent
 
-* Ruby version
+## Install and Setup
 
-* System dependencies
+Step 1: Clone project and enter into project folder
+```
+git clone https://github.com/arungpro/appdynamics_ruby_agent_sample.git
+cd appdynamics_ruby_agent_sample
+```
+Edit: change config/appdynamics.yml file with your controller and application creds
 
-* Configuration
+Step 2: Edit Gemfile
+to generate token
+Go to https://github.com/settings/tokens and create a new Personal Access Token.
 
-* Database creation
+Then update your Gemfile:
 
-* Database initialization
+# Gemfile
 
-* How to run the test suite
+gem 'appdynamics', git: "https://YOUR_TOKEN:@github.com/tildeio/app_dynamics", branch: "master"
 
-* Services (job queues, cache servers, search engines, etc.)
+Step 3: docker build
+```
+docker build -t myrails_app:v1 .
+```
 
-* Deployment instructions
+Step 4: docker run
+```
+docker run -p 3000:3000 myrails_app:v1
+```
 
-* ...
+Step 5: Drive some load to application http://localhost:3000. After couple of hits the agent should show up in controller.
