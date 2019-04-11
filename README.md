@@ -14,6 +14,7 @@ cd appdynamics_ruby_agent_sample
 Edit: change config/appdynamics.yml file with your controller and application creds
 
 Step 2: Edit Gemfile
+
 to generate token
 Go to https://github.com/settings/tokens and create a new Personal Access Token.
 
