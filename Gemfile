@@ -35,7 +35,12 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'appdynamics', git: "https://0d8738939c83d13ae5b07db16ba81b0d3f2682e3:@github.com/tildeio/app_dynamics", branch: "master"
+
+#APPD GEM
+
+gem 'appdynamics', git: "https://<your token>:@github.com/tildeio/app_dynamics", branch: "master"
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
