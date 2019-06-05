@@ -22,7 +22,7 @@ Then update your Gemfile:
 
 # Gemfile
 
-gem 'appdynamics', git: "https://YOUR_TOKEN:@github.com/tildeio/app_dynamics", branch: "master"
+gem 'appdynamics'
 
 Step 3: docker build
 ```
