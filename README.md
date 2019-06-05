@@ -15,14 +15,15 @@ Edit: change config/appdynamics.yml file with your controller and application cr
 
 Step 2: Edit Gemfile
 
-to generate token
-Go to https://github.com/settings/tokens and create a new Personal Access Token.
-
-Then update your Gemfile:
-
 # Gemfile
 
 gem 'appdynamics'
+
+Note: Ruby agent is build to run production env. To make it work on development env. Please add below line to config/application.rb
+
+```
+config.appdynamics.environments << :development
+```
 
 Step 3: docker build
 ```
