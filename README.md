@@ -13,9 +13,9 @@ cd appdynamics_ruby_agent_sample
 ```
 Edit: change config/appdynamics.yml file with your controller and application creds
 
-Step 2: Edit Gemfile
+Step 2: Edit Gemfile and Edit config/appdynamics.yml to add your controller details
 
-# Gemfile
+# Gemfile 
 
 gem 'appdynamics'
 
