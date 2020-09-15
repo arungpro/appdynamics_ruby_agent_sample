@@ -38,7 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 #APPD GEM
 
-gem 'appdynamics', git: "https://<your token>:@github.com/tildeio/app_dynamics", branch: "master"
+gem 'appdynamics'
 
 
 group :development, :test do
